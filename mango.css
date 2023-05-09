@@ -1,0 +1,92 @@
+body {
+	background-image: linear-gradient(to bottom, rgb(197, 197, 72), white);
+	background-attachment: fixed;
+	background-position-y: 60px;
+	margin-top: 100px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	font-family: 'Lato', sans-serif; 
+	height: 1000px;
+}
+
+.nav-bar {
+	display: flex;
+	justify-content: space-between;
+	background-color: rgb(197, 197, 72);
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 60px;
+	z-index: 100;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: rgb(0, 0, 0, 0.3);
+}
+
+.nav-bar p:hover {
+	font-size: 1.1em;
+	cursor: pointer;
+	text-decoration: underline;
+	transition: 0.15s;
+}
+
+.logo-container {
+	display: flex;
+	width: 70px;
+	justify-items: center;
+  align-items: center;
+	padding-right: 20px;
+}
+
+.logo-image {
+	height: 30px;
+	width: 30px;
+}
+
+.nav-middle-container {
+	display: grid;
+	grid-template-columns: repeat(3, 80px);
+	justify-items: center;
+  align-items: center;
+}
+
+.nav-right-container {
+	width: 100px;
+	display: flex;
+	justify-items: center;
+  align-items: center;
+	grid-template-columns: 20px 50px;
+}
+
+.options-icon,
+.cart-icon {
+	height: 30px;
+	padding-left: 10px;
+}
+
+.logo-container:hover,
+.options-icon:hover,
+.cart-icon:hover {
+	cursor: pointer;
+	transform: scale(110%);
+}
+
+.image-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
+  align-items: center;
+}
+
+.image {
+	width: 300px;
+	filter: grayscale(100%);
+}
+
+.image:hover {
+	transform: scale(120%);
+	filter: grayscale(0);
+	transition: 0.3s;
+}
